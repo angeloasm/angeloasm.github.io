@@ -1,0 +1,244 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    #clip-path: circle(130px at center);
+    background-image: url('bg.jpg');
+    
+    
+}
+html {
+    box-sizing: border-box
+}*, *: before, *: after {
+    box-sizing: inherit
+}
+.links_menu{
+    text-decoration:none;
+    color:#FFF
+}
+html {
+    -ms-text-size-adjust: 100 % ; -webkit-text-size-adjust: 100 %
+}
+body {
+    margin: 0
+}
+.clip-circle {
+    clip-path: circle(130px at center);
+    background-image: url('profile.jpg');
+    text-align:center
+    
+    
+}
+.clip-circle_hidden{display:none}
+
+.description {
+    text-align: center;
+    margin-top: -60px;
+}
+.sidebar {
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto
+}
+
+.main{
+    transition:margin-left .4s
+    
+}
+.contents{
+    max-width:980px;
+    margin:auto
+    
+}
+
+@media (min-width:993px){
+    .bgimg_mid-small{
+        display:none!important
+        
+    }
+}
+@media (max-width:600px){
+    .modal-content{
+        margin:0 10px;
+        width:auto!important
+        
+    }
+    .modal{
+        padding-top:30px
+        
+    }
+    .hide-small{
+        display:none!important
+        
+    }
+    .mobile{
+        display:block;
+        width:100%!important
+        
+    }
+    
+    .menu_black{
+        color:#fff!important;
+        background-color:#000!important;
+        width:100%!important
+        
+    }
+    .clip-circle_hidden{
+        display:block!important
+        
+    }
+    .bgimg_mid-small{
+        display:block!important
+        
+    }
+    .button_cv{
+        margin-bottom:40px!important
+        
+    }
+    .main{
+        margin-left:0!important;
+        margin-right:0!important
+        
+    }
+}
+@media (max-width:992px) and (min-width:601px){
+    .hide-medium{
+        display:none!important
+        
+    }
+    .menu_black{
+        color:#fff!important;
+        background-color:#000!important;
+        width:100%!important
+        
+    }
+    .clip-circle_hidden{
+        display:block!important
+        
+    }
+    .bgimg_mid-small{
+        display:block!important
+        
+    }
+    .button_cv{
+        margin-bottom:40px!important
+        
+    }
+    .main{
+        margin-left:0!important;
+        margin-right:0!important
+        
+    }
+    
+}
+.container{
+    margin-top:16px;
+    margin-bottom:16px
+    
+}
+.xxlarge{
+    font-size:36px!important
+    
+}
+.menu_black{
+    color:#fff!important;
+    background-color:#000!important;
+    width:60%
+    
+}
+.button_cv{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+    
+}
+.color_button{
+    color:#000!important;
+    background-color:#f1f1f1!important
+    
+}
+.topright_btn{
+    position:absolute;
+    right:0;
+    top:0
+    
+}
+
+.bar-block{
+    width:100%
+    
+}
+.bar-block{
+    min-width:100%
+    width:100%;
+    text-align:left;
+    padding:8px 16px
+    
+}
+
+.bar-block .bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0
+}
+.bar-block.centers .bar-item{
+    text-align:center
+    
+}
+.centers{
+    text-align:center
+    
+}
+.bar-block{
+    display:block;
+    width:100%
+    
+}
+.padding-large{
+    padding:12px 24px!important
+    
+}
+.justify{
+    text-align:justify!important
+    
+}
+.text_color{
+    color:#757575!important
+    
+}
+.sections{
+    margin-top:16px!important;
+    margin-bottom:16px!important
+    
+}
+.right_margin{
+    margin-right:16px!important
+    
+}
+.xlarge{
+    font-size:24px!important
+    
+}
+.pad_64{
+    padding-top:64px!important;
+    padding-bottom:64px!important
+    
+}
