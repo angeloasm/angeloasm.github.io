@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    #clip-path: circle(130px at center);
+    background-image: url('bg.jpg');
+    
+    
+}
+html {
+    box-sizing: border-box
+}*, *: before, *: after {
+    box-sizing: inherit
+}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100 % ; -webkit-text-size-adjust: 100 %
+}
+body {
+    margin: 0
+}
+.clip-circle {
+    clip-path: circle(130px at center);
+    background-image: url('profile.jpg');
+    text-align:center
+
+    /* OLD VALUE example: circle(245px, 140px, 50px); */
+    /* Yep, even the new clip-path has deprecated stuff. */
+}
+.clip-circle_hidden{display:none}
+
+.description {
+    text-align: center;
+    margin-top: -60px;
+}
+.sidebar {
+    height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto
+}
+
+.main{transition:margin-left .4s}
+.contents{max-width:980px;margin:auto}
+
+@media (min-width:993px){
+    .bgimg_mid-small{display:none!important}
+}
+@media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
+    .hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+    .menu_black{color:#fff!important;background-color:#000!important; width:100%!important}
+    .clip-circle_hidden{display:block!important}
+    .bgimg_mid-small{display:block!important}
+    .button_cv{margin-bottom:40px!important}
+.main{margin-left:0!important;margin-right:0!important}
+}
+@media (max-width:992px) and (min-width:601px){
+    .hide-medium{display:none!important}
+    .menu_black{color:#fff!important;background-color:#000!important; width:100%!important}
+    .clip-circle_hidden{display:block!important}
+    .bgimg_mid-small{display:block!important}
+    .button_cv{margin-bottom:40px!important}
+    .main{margin-left:0!important;margin-right:0!important}
+
+}
+.container{margin-top:16px;margin-bottom:16px}
+.xxlarge{font-size:36px!important}
+.menu_black{color:#fff!important;background-color:#000!important;width:60%}
+.button_cv{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.color_button{color:#000!important;background-color:#f1f1f1!important}
+.topright_btn{position:absolute;right:0;top:0}
+
+.bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
+.bar-block{min-width:100%}
+.bar-block {width:100%;text-align:left;padding:8px 16px}
+
+.bar-block .bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.bar-block.centers .bar-item{text-align:center}
+.centers{text-align:center}
+.bar-block{display:block;width:100%}
+.padding-large{padding:12px 24px!important}
+.justify{text-align:justify!important}
+.text_color{color:#757575!important}
+.sections{margin-top:16px!important;margin-bottom:16px!important}
+.right_margin{margin-right:16px!important}
+.xlarge{font-size:24px!important}
+.pad_64{padding-top:64px!important;padding-bottom:64px!important}
+
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="sidebar hide-medium hide-small" style="width:40%">
+    
+  <div class="bgimg">
+      <div class="clip-circle">
+          <img src="profile6.png" width="280px"/>
+          
+      </div>
+      <div class="description">
+        
+          <h1>Angelo Carraggi</h1>
+          <p>Computer Engineer</p>
+                  <button class="button_cv color_button">
+                      Download Resume
+                  </button>
+       </div>
+  </div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="sidebar menu_black xxlarge menu_black_mid" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="topright_btn" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="bar-block centers">
+    <a href="#" class="bar-item" onclick="closeNav()">Home</a>
+    <a href="#about" class="bar-item" onclick="closeNav()">About</a>
+    <a href="#contact" class="bar-item" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<div class="bgimg bgimg_mid-small">
+    <div class="clip-circle clip-circle_hidden">
+        <img src="profile6.png" width="280px"/>
+        
+    </div>
+    <div class="description">
+        <h1>Angelo Carraggi</h1>
+        <p>Computer Engineer</p>
+        <button class="button_cv color_button">
+            Download Resume
+        </button>
+    </div></div>
+<!-- Page Content -->
+
+<div class="main padding-large" style="margin-left:40%">
+
+   
+  <!-- Menu icon to open sidebar -->
+  <span class="topright_btn xxlarge " style="width:auto;right:0;margin-right:10px" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+
+
+
+  <!-- About Section -->
+  <div class="contents justify text_color" id="about">
+    <h2>About Me</h2>
+    <hr>
+    <p>
+    I am a computer engineer specialized in Software and Deep Learning. I'm finishing my thesis in Visual-Semantic Embedding and domain-adaptation based on extraction of semantic features between visual and text domains with reference to the state-of-art using PyTorch and CUDA. <br>Over the course of my life I have developed various personal software or assigned to me by the university.
+    <br><br>
+    I have enough experience in the most used programming languages ​​based on object-oriented such as C++ and Java but also in modular languages ​​such as C. <br><br>My knowledge of these three main languages ​​are deepened to ensure applications such as Socket-based (Distributed Applications), but also parallelism with all its related problems such as deadlock and starvation. <br><br>I strengthened my knowledge in deep learning during my thesis using a public framework such as PyTorch, but I also developed services on the Google App Engine cloud platform.<br><br>Another skill is the management of relational (DB) and non-relational data, thus knowing data-analysis techniques for large amount of Data(Big Data), data consistency (Triggers and relational constraints) in addition to the knowledge of no-sql data management (Google Datastore). <br><br>In my free time I develop websites through the use of the scripting language that is PHP and applications for Android (JAVA, Ionic) and iOS (Objective-C).
+   
+    </p>
+    <h3>My Project</h3>
+    
+    <br>
+
+
+
+
+
+
+
+  <!-- Contact Section -->
+  <div class="content text_color" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr>
+
+    <div class="sections">
+      <p><i class="fa fa-map-marker fa-fw xxlarge right_margin"></i> Modena, IT</p>
+      <p><i class="fa fa-envelope fa-fw xxlarge right_margin"> </i> Email: angelo.carraggi@gmail.com</p>
+    </div>
+    
+     <!-- Google Map -->
+    
+   
+   
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="container pad_64 text_color centers xlarge" style="background-color:#eaeaea;margin:-24px">
+      <a href="https://www.facebook.com/angelocarraggi"><i class="fa fa-facebook-official"></i></a>
+      <a href="https://www.linkedin.com/in/angelocarraggi/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.github.com/angeloasm"><i class="fa fa-github"></i></a>
+
+<p style="font-size:12px">Powered by Angelo Carraggi</p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+
+
+// Open and close sidebar
+function openNav() {
+   
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
