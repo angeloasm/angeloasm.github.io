@@ -25,17 +25,15 @@ body {
     margin: 0
 }
 .clip-circle {
-    clip-path: circle(130px at center);
-    background-image: url('profile.jpg');
+    padding:25px;
     text-align:center
-    
     
 }
 .clip-circle_hidden{display:none}
 
 .description {
     text-align: center;
-    margin-top: -60px;
+    margin-top: 0px;
 }
 .sidebar {
     height:100%;
