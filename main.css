@@ -33,6 +33,7 @@ body {
 
 .description {
     text-align: center;
+    margin-top: -10px;
 }
 .sidebar {
     height:100%;
